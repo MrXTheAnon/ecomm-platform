@@ -30,6 +30,7 @@ spark-warehouse/
 *.log
 *.txt
 log_*.txt
+.assets/links.txt
 
 # ── Docker volumes (never committed) ─────────────────
 # Volumes are defined in docker-compose and managed by Docker

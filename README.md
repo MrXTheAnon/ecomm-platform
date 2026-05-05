@@ -428,6 +428,17 @@ This project is architecturally equivalent to a cloud deployment:
 
 Developed as a **Cloud Computing Case Study** for M.Tech Data Science — demonstrating real-time data engineering patterns including streaming ingestion, medallion architecture, unified customer profiling, and live analytics.
 
+<ins>**TEAM MEMBERS**</ins>
+
+**ROHITH A**            : RA2512052010048
+**KISHORE KUMAR B N**   : RA2512052010051
+
+**KRITHIKA S S**        : RA251239010003
+**SANTHYA R**           : RA2512039010004
+**SURYA S**             : RA2512039010005
+**SRI RAM S**           : RA2512039010008
+**SANGRAM LEMBE**       : RA2512051010001
+
 ---
 
 ## 📄 License

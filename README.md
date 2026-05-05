@@ -21,25 +21,25 @@ Modern e-commerce companies face four core data challenges:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                   DATA GENERATORS                        │
-│  Web Logs · Transactions · Reviews · Social Media        │
-│              (Python + Faker + VADER)                    │
+│                   DATA GENERATORS                       │
+│  Web Logs · Transactions · Reviews · Social Media       │
+│              (Python + Faker + VADER)                   │
 └──────────────────────┬──────────────────────────────────┘
                        │ Kafka Topics (KRaft, no Zookeeper)
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│                  APACHE KAFKA 4.1.1                      │
+│                  APACHE KAFKA 4.1.1                     │
 │   web-logs (3p) · transactions (3p) · reviews (2p)      │
-│                  social-media (2p)                       │
+│                  social-media (2p)                      │
 └──────────────────────┬──────────────────────────────────┘
                        │ PySpark Structured Streaming / Batch
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│              MEDALLION ARCHITECTURE (MinIO S3A)          │
-│                                                          │
-│  🥉 Bronze  →  Raw Parquet (schema enforced)             │
+│              MEDALLION ARCHITECTURE (MinIO S3A)         │
+│                                                         │
+│  🥉 Bronze  →  Raw Parquet (schema enforced)            │
 │  🥈 Silver  →  Cleaned, deduplicated, PII masked        │
-│  🥇 Gold    →  Windowed aggregations → PostgreSQL        │
+│  🥇 Gold    →  Windowed aggregations → PostgreSQL       │
 └──────────┬──────────────────────────┬───────────────────┘
            │                          │
            ▼                          ▼

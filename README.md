@@ -422,7 +422,7 @@ This project is architecturally equivalent to a cloud deployment:
 | MongoDB (Docker) | MongoDB Atlas |
 | Streamlit (local) | Streamlit Cloud / AWS ECS |
 
----
+----
 
 ## 👨‍🎓 Academic Context
 
